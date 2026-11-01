@@ -1,5 +1,11 @@
 # Godot Engine
 
+This is a fork of the Godot 3.6.0 release version. It adds a hack that prevents the debugging socket from
+receiving data from Thread objects running code that can cause a race condition with the main thread and
+prevent the debugger from being used at all. See issue [#32411](https://github.com/godotengine/godot/issues/32441)
+
+------
+
 <p align="center">
   <a href="https://godotengine.org">
     <img src="logo_outlined.svg" width="400" alt="Godot Engine logo">
